@@ -1,0 +1,175 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    height: 80px;
+}
+
+.title a {
+    color: gray;
+    font-weight: 100;
+}
+
+nav {
+    background-color: #2b2d32;
+    position: sticky;
+    top: 0;
+    padding-left: 100px;
+    z-index: 1000;
+    overflow-y: hidden;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #ababad;
+    text-decoration: none;
+    padding: 20px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    display: block;
+    font-size: large;
+}
+
+nav ul li a:hover {
+    background-color: #525457;
+    color: white;
+    text-decoration: 4px underline rgb(162, 78, 162);
+    text-underline-offset: 5px;
+}
+
+main {
+    padding: 100px;
+}
+
+.main_div {
+    display: flex;
+    gap: 15px;
+}
+
+.main_div div{
+    border-radius: 10px;
+}
+
+.sub_div1 {
+    width: 150%;    
+}
+
+.sub_div2 div:first-child img{
+    border: 1px solid black;
+}
+
+img{
+    border-radius: 10px ;
+    width: 100%;
+    height: auto;
+}
+
+
+.sub_div2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.LNmain_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    background-color: #fff;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#f1_Div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #2b2d32;
+    padding: 20px;
+}
+
+#f1_Div h3 {
+    color: white;
+    padding-left: 15px;
+}
+
+#f1_Div ul {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+}
+
+#f1_Div ul li a {
+    color: gray;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+#f1_subdiv1, #f1_subdiv2, #f1_subdiv3 {
+    border-right: 1px solid gray;
+}
+
+.f2_Sub_Div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #414347;
+    padding: 20px;
+    color: white;
+}
+
+#f2_subdiv1 h1 {
+    font-size: 1em;
+    padding: 5px;
+}
+
+#f2_subdiv1 label {
+    font-size: 0.8em;
+}
+
+#f3_subdiv2 {
+    padding-left: 10px;
+}
+
+#f3_subdiv2 a {
+    color: gray;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#f1_Div{
+    padding: 90px;
+}
