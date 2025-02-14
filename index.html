@@ -10,32 +10,8 @@
       src="https://kit.fontawesome.com/7e6aea3f19.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </head>
-  <script>
-    let timeout;
-
-    window.addEventListener("scroll", function () {
-      clearTimeout(timeout);
-
-      const movingHeader = document.getElementById("movingHeader");
-      const fixHeader = document.getElementById("fixHeader");
-      const scrollPosition = window.scrollY;
-
-      timeout = setTimeout(() => {
-        if (scrollPosition > 100) {
-          movingHeader.style.visibility = "visible";
-          movingHeader.style.opacity = "1";
-          fixHeader.style.visibility = "hidden";
-          fixHeader.style.opacity = "0";
-        } else {
-          movingHeader.style.visibility = "hidden";
-          movingHeader.style.opacity = "0";
-          fixHeader.style.visibility = "visible";
-          fixHeader.style.opacity = "1";
-        }
-      }, 10);
-    });
-  </script>
 
   <body>
     <header id="movingHeader">
@@ -43,7 +19,7 @@
         <h1>engadget</h1>
         <div class="sectionMenu">
           <span>Section</span>
-          <div class="section-content">
+          <div class="section-content" style="display: flex; flex-direction: column; width: 100%;">
             <p>Reviews</p>
             <p>Buying Guides</p>
             <p>Gaming</p>
