@@ -11,14 +11,58 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  <script>
+    let timeout;
+
+    window.addEventListener("scroll", function () {
+      clearTimeout(timeout);
+
+      const movingHeader = document.getElementById("movingHeader");
+      const fixHeader = document.getElementById("fixHeader");
+      const scrollPosition = window.scrollY;
+
+      timeout = setTimeout(() => {
+        if (scrollPosition > 100) {
+          movingHeader.style.visibility = "visible";
+          movingHeader.style.opacity = "1";
+          fixHeader.style.visibility = "hidden";
+          fixHeader.style.opacity = "0";
+        } else {
+          movingHeader.style.visibility = "hidden";
+          movingHeader.style.opacity = "0";
+          fixHeader.style.visibility = "visible";
+          fixHeader.style.opacity = "1";
+        }
+      }, 10);
+    });
+  </script>
 
   <body>
-    <header>
-      <div class="title">
+    <header id="movingHeader">
+      <div class="movingtitle" id="titleVar">
+        <h1>engadget</h1>
+        <div class="sectionMenu">
+          <span>Section</span>
+          <div class="section-content">
+            <p>Reviews</p>
+            <p>Buying Guides</p>
+            <p>Gaming</p>
+            <p>Entertainment</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a class="movingtitle_login" href="#">Login</a>
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+    </header>
+
+    <header id="fixHeader">
+      <div class="title" id="titleVar">
         <h1>engadget</h1>
         <a href="#">Login</a>
       </div>
-      <nav>
+      <nav id="navVar">
         <ul>
           <li><a href="#">Reviews</a></li>
           <li><a href="#">Buying Guides</a></li>
@@ -229,10 +273,10 @@
         </div>
       </div>
 
-      <br>
+      <br />
       <!--Latest Reviews and Guides-->
       <div class="Latest-Reviews">
-        <div>
+        <div class="Latest-Reviews-Title">
           <h1>Latest Reviews and Guides</h1>
           <a href="">See all guides</a>
         </div>
