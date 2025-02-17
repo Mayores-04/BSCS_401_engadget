@@ -300,9 +300,9 @@ img {
   flex-direction: column;
 }
 
-.LNmain_div h1 {
-  font-size: 1.5em;
-  font-weight: 800;
+.LNmain_div h3 {
+  font-size: 24px;
+  color: black;
 }
 
 .LNmain_div div {
@@ -374,12 +374,13 @@ img {
   gap: 15px;
 }
 
-.Latest-Reviews h1 {
-  font-size: 1.5em;
+.Latest-Reviews h3 {
+  font-size: 24px;
 }
 
 .Latest-Reviews a {
-  color: #525457;
+  color: black;
+  font-size: 16px;
 }
 
 .Latest-Reviews .Latest-Reviews-Items {
