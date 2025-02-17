@@ -388,66 +388,106 @@ img {
   flex-direction: row;
 }
 
-#f1_Div {
+/*Footer*/
+.footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: #2b2d32;
-  padding: 20px;
+  padding: 40px 20px;
+  border-top: 1px solid #4a4c4f;
 }
 
-#f1_Div h3 {
+.footer-container h3 {
   color: white;
-  padding-left: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid purple;
+  margin-bottom: 15px;
 }
 
-#f1_Div ul {
+.footer-list {
   display: flex;
   flex-direction: column;
-  height: 180px;
+  gap: 8px;
 }
 
-#f1_Div ul li a {
-  color: gray;
-  font-size: 0.8em;
+.footer-list li a {
+  color: #cfcfcf;
+  font-size: 0.9em;
   text-decoration: none;
 }
 
-#f1_subdiv1,
-#f1_subdiv2,
-#f1_subdiv3 {
-  border-right: 1px solid gray;
+.footer-column {
+  border-right: 1px solid #4a4c4f;
+  padding-right: 20px;
 }
 
-.f2_Sub_Div {
+.footer-newsletter {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #414347;
-  padding: 20px;
+  padding: 30px 20px;
   color: white;
 }
 
-#f2_subdiv1 h1 {
-  font-size: 1em;
-  padding: 5px;
+.newsletter-title {
+  font-size: 1.1em;
+  margin-bottom: 10px;
 }
 
-#f2_subdiv1 label {
-  font-size: 0.8em;
+.newsletter-label {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9em;
+  margin-left: 8px;
 }
 
-#f3_subdiv2 {
-  padding-left: 10px;
+.email-input {
+  padding: 10px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
 }
 
-#f3_subdiv2 a {
+.subscribe-button {
+  padding: 10px 20px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-follow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.footer-follow span {
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+
+.footer-follow a {
+  color: gray;
+  margin: 0 8px;
+  font-size: 1.2em;
+}
+
+.footer-bottom {
+  background-color: white;
+  color: gray;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.footer-bottom a {
   color: gray;
   text-decoration: none;
-  padding: 10px;
-}
-
-#f1_Div {
-  padding: 90px;
+  padding: 0 8px;
+  font-size: 0.8em;
 }
 
 /* Responsive adjustments */
