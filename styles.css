@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   height: 100vh;
   line-height: 1.6;
   background-color: white;
@@ -119,6 +119,7 @@ header {
   padding: 8px 12px;
   font-size: 14px;
   transition: background-color 0.2s;
+  width: 100%;
 }
 
 .section-content p:hover {
@@ -129,7 +130,11 @@ header {
 .movingtitle_login {
   padding: 12px;
   border-right: 1px solid gray;
+  height: 160%;
+  display: flex;
+  align-items: center;  
 }
+
 
 #movingHeader div:last-child a {
   color: gray;
@@ -144,6 +149,7 @@ nav {
   z-index: 1000;
   justify-content: space-between;
   display: flex;
+  font-weight: bold;
   flex-direction: row;
 }
 
@@ -160,7 +166,7 @@ nav ul li a {
   list-style: none;
   color: #ababad;
   text-decoration: none;
-  padding: 20px;
+  padding: 15px;
   padding-top: 27px;
   padding-bottom: 27px;
   display: block;
@@ -179,9 +185,11 @@ nav ul:last-child li a:hover {
 }
 
 main {
-  padding: 100px;
+  padding: 100px; 
 }
 
+
+/* Features Section*/
 .main_div {
   display: flex;
   gap: 15px;
@@ -192,7 +200,43 @@ main {
 }
 
 .sub_div1 {
-  width: 155%;
+  min-width: 680px;
+  width: 700px;
+}
+
+.sub_div1 a{
+  color: #232121;
+  font-size: 32px;
+  text-decoration: none;
+  font-weight: bolder;
+  line-height: 1.2;
+}
+
+#description p{
+  padding-top: 10px;
+}
+
+#features_title:hover{
+  text-decoration: underline;
+}
+
+#name_date_container {
+  gap: 27px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sub_div1 p{
+  font-size: 16px;
+  color: #232121;
+}
+
+.sub_div1 #name{
+  font-size: 14px;
+  color: #232121;
 }
 
 img {
@@ -208,6 +252,14 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 18px;
+}
+
+.sub_div2 div a{
+  font-size: 18px;
+  color: #232A31;
+  font-weight: bolder;
+  text-decoration: none;
+  line-height: 1.2;
 }
 
 .Sub_Features {
@@ -248,15 +300,38 @@ img {
 }
 
 .pagination {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
 }
 
 .pagination a {
   color: black;
-  background-color: #fff;
-  float: left;
-  padding: 8px 16px;
+  padding: 10px 15px;
   text-decoration: none;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a.active {
+  background-color: #2b2d32;
+  color: white;
+}
+
+.pagination a:hover {
+  background-color: #dddddd;
+  color: #2b2d32;
+}
+
+.pagination .prev, .pagination .next {
+  color: #2b2d32;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.pagination .prev:hover, .pagination .next:hover {
+  background-color: #f0f0f0;
 }
 
 /*Latest Reviews*/
