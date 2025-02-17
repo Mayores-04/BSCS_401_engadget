@@ -204,7 +204,7 @@ main {
 /* Features Section*/
 .main_div {
   display: flex;
-  gap: 15px;
+  gap: 18px;
 }
 
 .main_div div {
@@ -212,7 +212,7 @@ main {
 }
 
 .sub_div1 {
-  flex: 2;
+  flex: 2.4;
 }
 
 .sub_div1 img{
@@ -231,8 +231,11 @@ main {
   padding-top: 10px;
 }
 
-#features_title:hover{
+#title:hover{
   text-decoration: underline;
+  text-decoration-color: rgb(164, 164, 164);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
 }
 
 #name_date_container {
@@ -284,6 +287,13 @@ img {
   gap: 15px;
 }
 
+.Sub_Features div a {
+  font-size: 18px;
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
 /*Latest News Section*/
 .LNmain_div {
   display: flex;
@@ -308,6 +318,8 @@ img {
 
 .LNmain_div div div a {
   text-decoration: none;
+  font-size: 22px;
+  font-weight: bolder;
   color: black;
 }
 
