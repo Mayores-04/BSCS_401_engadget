@@ -301,7 +301,7 @@ img {
 }
 
 .LNmain_div h3 {
-  font-size: 24px;
+  font-size: 1.4em;
   color: black;
 }
 
@@ -375,7 +375,8 @@ img {
 }
 
 .Latest-Reviews h3 {
-  font-size: 24px;
+  font-size: 1.4em;
+  color: black;
 }
 
 .Latest-Reviews a {
