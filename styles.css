@@ -564,7 +564,8 @@ input[type="checkbox"]:focus {
   margin-right: 8px;
   border: 0 solid white;
   background-color: #121212;
-  width: 280px;
+  color: white;
+  width: 200px;
   height: 45px;
 }
 .subscribe-button {
